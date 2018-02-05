@@ -9,11 +9,11 @@ class Subnet_Cal:
         for a in range(len(ip_add)):
             b = ip_add[c]
             c = (address[c], 2)
-            self.show_address.append(b + c)
+            self.show_address.append(b & c)
         
         
      def subnet(self, count):
-        one-zero = self.prefix 
+        one-zero = self.binary 
         adding = "1"*one-zero + "0"*(32-one-zero)
         address = [adding[0:8], adding[8:16], adding[16:24], adding[24:32]]
         move = math.ceil( one-zero / 8.0 )
